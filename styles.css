@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+
 * {
   margin: 0;
   padding: 0;
@@ -6,7 +8,6 @@
 
 .form-group {
   margin: 20px 0;
- 
 }
 input {
   height: 30px;
@@ -17,7 +18,7 @@ button {
   background: dodgerblue;
   color: #fff;
   padding: 10px;
-  border: solid 1px dodgerblue;
+  border: solid 1px rgb(24, 128, 207);
   cursor: pointer;
 }
 
@@ -27,14 +28,22 @@ html {
 }
 
 body {
-  background: #f7f5ff;
+  background: white;
   display: flex;
   flex-flow: column;
   height: 100vh;
 }
+.posist {
+  color: white;
+  font-size: large;
+}
 
 header {
-  background: dodgerblue;
+  background: rgb(26, 1, 1);
+  margin-top: 1%;
+
+  border-radius: 1%;
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2);
   color: rgb(252, 250, 249);
 }
 
@@ -45,10 +54,14 @@ header #row {
   justify-content: space-between;
   align-items: center;
 }
-
+.dev {
+  color: rgb(1, 8, 15);
+  align-items: center;
+  margin-left: 12%;
+}
 header #jumbotron {
   height: 200px;
-  background: rgb(11, 131, 250);
+  background: rgb(246, 247, 249);
   color: white;
   display: grid;
   justify-content: center;
@@ -104,51 +117,108 @@ main {
   margin: 20px 5px;
 }
 
-
 main #products {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
+  /* width: 99%; */
+  gap: 30px;
   margin-top: 5px;
 }
 
 main #products .card {
-  height: 170px;
+  height: 220px;
   display: grid;
   justify-content: center;
   align-items: center;
   box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2);
   color: #fff;
+  border-radius: 10%;
+}
+.team {
+  color: rgb(12, 56, 90);
 }
 
 main #products .card:first-child {
-  background: tomato;
+  background: rgb(246, 247, 249);
 }
-
+.text{
+  color: black;
+}
 main #products .card:nth-child(2) {
-  background: orange;
+  background: rgb(246, 247, 249);
 }
 
 main #products .card:nth-child(3) {
-  background: rgb(94, 21, 33);
+  background: rgb(246, 247, 249);
 }
 
 main #products .card:nth-child(4) {
-  background: plum;
+  background: rgb(246, 247, 249);
 }
 
 main #products .card:nth-child(5) {
-  background: rgb(25, 109, 67);
+  background: rgb(246, 247, 249);
 }
 
 main #products .card:last-child {
-  background: royalblue;
+  background: rgb(246, 247, 249);
 }
 
-#form{
-  width: 100%;
-  /* margin: auto; */
+#form {
+  /* box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2); */
+  /* border-radius: 15%; */
+  height: 35px;
+  width: 90%;
 }
+
+#form2 {
+  /* box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2); */
+  /* border-radius: 15%; */
+  height: 35px;
+  width: 100%;
+  margin-left: 30%;
+}
+#pwd {
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2);
+  /* border-radius: 15%; */
+  height: 35px;
+  width: 90%;
+}
+#email {
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2);
+  /* border-radius: 15%; */
+  height: 35px;
+  width: 90%;
+}
+
+#fname {
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2);
+  /* border-radius: 15%; */
+  height: 35px;
+  width: 90%;
+}
+
+#lname {
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2);
+  /* border-radius: 15%; */
+  height: 35px;
+  width: 90%;
+}
+
+#phone {
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2);
+  /* border-radius: 15%; */
+  height: 35px;
+  width: 90%;
+}
+
+#username {
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2);
+  /* border-radius: 15%; */
+  height: 35px;
+  width: 90%;
+}
+
 footer {
   padding: 10px 5px;
   background: #222;
@@ -158,6 +228,14 @@ footer {
   align-items: center;
 }
 
-.image{
+.image {
   display: flex;
+}
+
+.error {
+  color: red;
+  size: 80%;
+}
+.hidden {
+  display: none;
 }
